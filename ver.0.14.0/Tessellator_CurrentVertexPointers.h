@@ -1,0 +1,67 @@
+#pragma once
+namespace Tessellator{
+	class CurrentVertexPointers{
+		public:
+		void CurrentVertexPointers(uchar *,mce::VertexFormat const&);
+		void nextVertex(void);
+		Tessellator(MemoryTracker *);
+		void _allocateIndices(int);
+		void _tex(Vec2 const&,int);
+		void addOffset(Vec3 const&);
+		void addOffset(float,float,float);
+		void begin(int);
+		void begin(mce::PrimitiveMode,int);
+		void beginIndices(int);
+		void cancel(void);
+		void clear(void);
+		void color(Color const&);
+		void color(float,float,float,float);
+		void color(int);
+		void color(int,int);
+		void color(int,int,int,int);
+		void color(uchar,uchar,uchar,uchar);
+		void colorABGR(int);
+		void draw(mce::MaterialPtr const&);
+		void draw(mce::MaterialPtr const&,mce::TexturePtr const&);
+		void draw(mce::MaterialPtr const&,mce::TexturePtr const&,mce::TexturePtr const&);
+		void enableColor(void);
+		void end(char const*,bool);
+		void getByteSize(void);
+		void getColor(void);
+		void getPolygonCount(void);
+		void getStats(void);
+		void getVertexCount(void);
+		void getVertexFormat(void);
+		void init(void);
+		void isTessellating(void);
+		void noColor(void);
+		void normal(Vec3 const&);
+		void normal(float,float,float);
+		void quad(bool);
+		void quad(uint,bool);
+		void quad(uint,uint,uint,uint);
+		void quadFacing(signed char);
+		void resetScale(void);
+		void resetTilt(void);
+		void rotationOffset(float,Vec3 const&);
+		void scale2d(float,float);
+		void scale3d(float,float,float);
+		void setOffset(Vec3 const&);
+		void setOffset(float,float,float);
+		void tex(Vec2 const&);
+		void tex(float,float);
+		void tex1(Vec2 const&);
+		void tex1(float,float);
+		void tex2(Vec2 const&);
+		void tex2(float,float);
+		void tilt(void);
+		void triangle(uint,uint,uint);
+		void trim(void);
+		void vertex(Vec3 const&);
+		void vertexUV(Vec3 const&,float,float);
+		void vertexUV(float,float,float,float,float);
+		void voidBeginAndEndCalls(bool);
+		void ~Tessellator();
+		void ~Tessellator();
+	}
+};

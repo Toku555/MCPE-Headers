@@ -1,0 +1,48 @@
+#pragma once
+class Wolf{
+	public:
+		Wolf(BlockSource &);
+		void _avoidSnowBury(void);
+		void _getAmbientSound(void);
+		void _getDeathSound(void);
+		void _getHurtSound(void);
+		void _isHurt(void);
+		void _playStepSound(BlockPos const&,int);
+		void _setTameableAttributes(void);
+		void addAdditionalSaveData(CompoundTag &);
+		void addRider(Entity &);
+		void canAddRider(Entity &);
+		void canInteractWith(Player &);
+		void canMate(Animal const&);
+		void createBreedOffspring(Animal &);
+		void doHurtTarget(Entity *);
+		void getBodyRollAngle(float,float);
+		void getCollarColor(void);
+		void getEntityTypeId(void);
+		void getHeadRollAngle(float);
+		void getInteractText(Player &);
+		void getRideHeight(void);
+		void getTailAngle(float);
+		void getWetShade(float);
+		void handleEntityEvent(EntityEvent);
+		void hurt(EntityDamageSource const&,int);
+		void interactWithPlayer(Player &);
+		void isAlliedTo(Mob *);
+		void isAngry(void);
+		void isFood(ItemInstance const&);
+		void isInterested(void);
+		void isWet(void);
+		void newServerAiStep(void);
+		void normalTick(void);
+		void postProcessOffspring(Animal &,Animal &);
+		void readAdditionalSaveData(CompoundTag const&);
+		void registerAttributes(void);
+		void setAngry(bool);
+		void setCollarColor(PaletteColor);
+		void setInterested(bool);
+		void setOwner(EntityUniqueID);
+		void setWet(bool);
+		void shouldDespawn(void);
+		void ~Wolf();
+		void ~Wolf();
+};

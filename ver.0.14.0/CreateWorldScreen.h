@@ -1,0 +1,46 @@
+#pragma once
+class CreateWorldScreen{
+	public:
+		CreateWorldScreen(MinecraftClient &,CreateWorldScreenType);
+		CreateWorldScreen(MinecraftClient &,LevelSummary const&);
+		void _buttonClicked(Button &);
+		void _controllerDirectionChanged(int,StickDirection);
+		void _createToggle(bool);
+		void _createWorldClicked(void);
+		void _editGameMode(GameType);
+		void _getDefaultGenerator(void);
+		void _getDescription(void);
+		void _getGameMode(void);
+		void _getWorldData(void);
+		void _guiElementClicked(GuiElement &);
+		void _isAdvanced(void);
+		void _isFlat(void);
+		void _isOneOf(Button &,std::vector<std::shared_ptr<ImageButton>,std::allocator<std::shared_ptr<ImageButton>>> &,int &);
+		void _isOneOfGuiElements(GuiElement &,std::vector<std::shared_ptr<ImageButton>,std::allocator<std::shared_ptr<ImageButton>>> &,int &);
+		void _isOneOfGuiElements(GuiElement &,std::vector<std::shared_ptr<TextBox>,std::allocator<std::shared_ptr<TextBox>>> &,int &);
+		void _levelStorage(void);
+		void _pointerPressed(int,int);
+		void _pointerReleased(int,int);
+		void _renameLevel(void);
+		void _setWorldData(LevelData const&);
+		void closeScreen(void);
+		void generateLocalGame(void);
+		void getLevelName(void);
+		void getSeed(void);
+		void handleBackEvent(bool);
+		void handleButtonRelease(short);
+		void handleCaretLocation(int);
+		void handleTextChar(std::string const&,bool);
+		void init(void);
+		void isAlwaysDay(void);
+		void isEditMode(void);
+		void isWorldLimited(void);
+		void onLevelNameChanged(std::string const&);
+		void onSetKeyboardHeight(float);
+		void render(int,int,float);
+		void setTextboxText(std::string const&);
+		void setupPositions(void);
+		void tick(void);
+		void ~CreateWorldScreen();
+		void ~CreateWorldScreen();
+};
