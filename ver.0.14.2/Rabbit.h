@@ -1,0 +1,47 @@
+#pragma once
+class Rabbit{
+	public:
+		Rabbit(BlockSource &);
+		void _getAmbientSound(void);
+		void _getDeathSound(void);
+		void _getHurtSound(void);
+		void addAdditionalSaveData(CompoundTag &);
+		void aiStep(void);
+		void canAddRider(Entity &);
+		void canJump(void);
+		void checkLandingDelay(void);
+		void createBreedOffspring(Animal &);
+		void disableJumpControl(void);
+		void doHurtTarget(Entity *);
+		void dropDeathLoot(int);
+		void eatCarrot(void);
+		void enableJumpControl(void);
+		void facePoint(float,float);
+		void finalizeMobSpawn(void);
+		void getCurrentJumpType(void);
+		void getEntityTypeId(void);
+		void getJumpCompletion(float);
+		void getJumpDelay(void);
+		void getJumpPower(void);
+		void getJumpSound(void);
+		void getRabbitType(void);
+		void getRandomRabbitType(void);
+		void isFood(ItemInstance const&);
+		void isJumping(void);
+		void isTemptingItem(Item const*);
+		void newServerAiStep(void);
+		void onSynchedDataUpdate(int);
+		void postProcessOffspring(Animal &,Animal &);
+		void readAdditionalSaveData(CompoundTag const&);
+		void readyToEat(void);
+		void registerAttributes(void);
+		void setCurrentJumpType(Rabbit::JumpType);
+		void setJumping(bool,Rabbit::JumpType);
+		void setLandingDelay(void);
+		void setRabbitType(int);
+		void setSpeedModifier(float);
+		void startJumping(Rabbit::JumpType);
+		void wantsMoreFood(void);
+		void ~Rabbit();
+		void ~Rabbit();
+};

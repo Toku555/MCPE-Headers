@@ -1,0 +1,40 @@
+#pragma once
+class GuiElement{
+	public:
+		GuiElement(bool,bool,int,int,int,int);
+		void backPressed(MinecraftClient *,bool);
+		void clearBackground(void);
+		void drawPressed(int);
+		void drawSelected(int);
+		void drawSliderSelected(void);
+		void focusedMouseClicked(MinecraftClient *,int,int);
+		void focusedMouseReleased(MinecraftClient *,int,int);
+		void handleButtonPress(MinecraftClient *,short);
+		void handleButtonRelease(MinecraftClient *,short);
+		void handleCaretLocation(int);
+		void handleControllerDirectionHeld(int,StickDirection);
+		void handleTextChar(MinecraftClient *,std::string const&,bool);
+		void hasChildren(void);
+		void hasFocus(void);
+		void isSelected(void);
+		void onSelectedChanged(void);
+		void pointInside(int,int);
+		void pointerPressed(MinecraftClient *,int,int);
+		void pointerReleased(MinecraftClient *,int,int);
+		void render(MinecraftClient *,int,int);
+		void setActiveAndVisibility(bool);
+		void setActiveAndVisibility(bool,bool);
+		void setBackground(Color const&);
+		void setBackground(MinecraftClient *,std::string const&,IntRectangle const&,int,int);
+		void setFocus(bool);
+		void setKeyboardHeight(MinecraftClient *,float,Vec2 const&);
+		void setSelected(bool);
+		void setTextboxText(std::string const&);
+		void setVisible(bool);
+		void setupPositions(void);
+		void suppressOtherGUI(void);
+		void tick(MinecraftClient *);
+		void topRender(MinecraftClient *,int,int);
+		void ~GuiElement();
+		void ~GuiElement();
+};

@@ -1,0 +1,46 @@
+#pragma once
+class DoublePlantBlock{
+	public:
+		DoublePlantBlock(std::string const&,int);
+		void asItemInstance(BlockSource &,BlockPos const&,int);
+		void buildDescriptionName(ItemInstance const&);
+		void canBeBuiltOver(BlockSource &,BlockPos const&);
+		void canBeSilkTouched(void);
+		void canSurvive(BlockSource &,BlockPos const&);
+		void checkAlive(BlockSource &,BlockPos const&);
+		void getAABB(BlockSource &,BlockPos const&,AABB &,int,bool,int);
+		void getCarriedTexture(signed char,int);
+		void getColor(BlockSource &,BlockPos const&);
+		void getColorForParticle(BlockSource &,BlockPos const&,int);
+		void getOrientation(BlockSource &,BlockPos const&);
+		void getOrientation(int);
+		void getResource(Random &,int,int);
+		void getResourceCount(Random &,int,int);
+		void getSecondPart(BlockSource &,BlockPos const&,BlockPos&);
+		void getSpawnResourcesAuxValue(uchar);
+		void getStemTexture(bool,int);
+		void getSunFlowerUVs(void);
+		void getTessellatedUVs(void);
+		void getTexture(signed char,int);
+		void getType(BlockSource &,BlockPos const&);
+		void getType(int);
+		void getVisualShape(BlockSource &,BlockPos const&,AABB &,bool);
+		void getVisualShape(uchar,AABB &,bool);
+		void isTop(BlockSource &,BlockPos const&);
+		void isTop(int);
+		void mayPlace(BlockSource &,BlockPos const&);
+		void mayPlace(BlockSource &,BlockPos const&,signed char);
+		void onFertilized(BlockSource &,BlockPos const&,Player *);
+		void onGraphicsModeChanged(bool,bool,bool);
+		void onLoaded(BlockSource &,BlockPos const&);
+		void onPlace(BlockSource &,BlockPos const&);
+		void placeAt(BlockSource &,BlockPos const&,uchar,int);
+		void playerDestroy(Player *,BlockPos const&,int);
+		void playerWillDestroy(Player &,BlockPos const&,int);
+		void popFlowerResources(BlockSource &,BlockPos const&,int,Player *);
+		void popGrassResources(BlockSource &,BlockPos const&,int,Player *);
+		void randomlyModifyPosition(BlockPos const&);
+		void randomlyModifyPosition(BlockPos const&,int &);
+		void ~DoublePlantBlock();
+		void ~DoublePlantBlock();
+};
