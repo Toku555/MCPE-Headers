@@ -1,0 +1,40 @@
+#pragma once
+class Skin{
+	public:
+		Skin(Skin const&);
+		Skin(Skin const&);
+		Skin(std::string const&,std::string const&,std::string const&,ResourceLocation const&,Skin::SkinType,float);
+		Skin(std::string const&,std::string const&,std::string const&,ResourceLocation const&,Skin::SkinType,float);
+		Skin(std::string const&,std::string const&,std::string const&,std::string const&,Skin::SkinType,float);
+		Skin(std::string const&,std::string const&,std::string const&,std::string const&,Skin::SkinType,float);
+		void getGeometryName(void);
+		void getGeometryName(void);
+		void getGuiScale(void);
+		void getGuiScale(void);
+		void getName(void);
+		void getName(void);
+		void getPackIndex(void);
+		void getPackIndex(void);
+		void getSerializable(void);
+		void getSerializable(void);
+		void getSkinIndex(void);
+		void getSkinIndex(void);
+		void getSkinLocation(void);
+		void getSkinLocation(void);
+		void getSkinPack(void);
+		void getSkinPack(void);
+		void isCustomSkin(void);
+		void isCustomSkin(void);
+		void isPremium(void);
+		void operator==(Skin const&);
+		void premiumLocked(void);
+		void premiumLocked(void);
+		void setPackIndex(int);
+		void setPackIndex(int);
+		void setSkinIndex(int);
+		void setSkinIndex(int);
+		void setSkinPack(SkinPack *);
+		void setSkinPack(SkinPack *);
+		void ~Skin();
+		void ~Skin();
+};

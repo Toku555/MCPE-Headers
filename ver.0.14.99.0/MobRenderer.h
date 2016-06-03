@@ -1,0 +1,45 @@
+#pragma once
+class MobRenderer{
+	public:
+		MobRenderer(std::unique_ptr<Model,std::default_delete<Model>>,mce::TexturePtr,float);
+		MobRenderer(std::unique_ptr<Model,std::default_delete<Model>>,mce::TexturePtr,float);
+		MobRenderer(std::unique_ptr<Model,std::default_delete<Model>>,mce::TexturePtr,float);
+		void _calcLeashOffset(Vec3 &,float);
+		void _calcLeashOffset(Vec3 &,float);
+		void additionalRendering(Model &,Mob &,float,float,float,float,float,float,float);
+		void additionalRendering(Model &,Mob &,float,float,float,float,float,float,float);
+		void getArmor(void);
+		void getAttackAnim(Mob &,float);
+		void getAttackAnim(Mob &,float);
+		void getBob(Mob &,float);
+		void getBob(Mob &,float);
+		void getFlipDegrees(Mob &);
+		void getFlipDegrees(Mob &);
+		void getSkinPtr(Entity &);
+		void getSkinPtr(Entity &);
+		void lerpVec3(Vec3,Vec3,float);
+		void prepareArmor(Mob &,ArmorSlot,float);
+		void prepareArmor(Mob &,ArmorSlot,float);
+		void prepareCarriedItem(Model &,Mob &,ItemInstance *);
+		void prepareCarriedItem(Model &,Mob &,ItemInstance *);
+		void render(Entity &,Vec3 const&,float,float);
+		void render(Entity &,Vec3 const&,float,float);
+		void renderDebug(Entity &,Options &);
+		void renderDebug(Entity &,Options &);
+		void renderLeash(Entity &,Vec3 const&,float,float);
+		void renderLeash(Entity &,Vec3 const&,float,float);
+		void renderModel(Model &,mce::TexturePtr const&,Entity &,Vec3 const&,float,float);
+		void renderModel(Model &,mce::TexturePtr const&,Entity &,Vec3 const&,float,float);
+		void scale(Mob &,Matrix &,float);
+		void scale(Mob &,Matrix &,float);
+		void setArmor(Model &);
+		void setArmor(Model &);
+		void setupPosition(Entity &,Vec3 const&,Matrix &);
+		void setupPosition(Entity &,Vec3 const&,Matrix &);
+		void setupRotations(Entity &,float,float,Matrix &,float);
+		void setupRotations(Entity &,float,float,Matrix &,float);
+		void ~MobRenderer();
+		void ~MobRenderer();
+		void ~MobRenderer();
+		void ~MobRenderer();
+};

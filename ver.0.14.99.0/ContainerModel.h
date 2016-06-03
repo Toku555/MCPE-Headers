@@ -1,0 +1,42 @@
+#pragma once
+class ContainerModel{
+	public:
+		ContainerModel(ContainerEnumName,int,int);
+		ContainerModel(ContainerEnumName,int,int);
+		ContainerModel(ContainerEnumName,int,int);
+		void _init(void);
+		void _init(void);
+		void _notifyPlayer(int);
+		void _notifyPlayer(int);
+		void _onItemChanged(int);
+		void _onItemChanged(int);
+		void containerChanged(int);
+		void containerChanged(int);
+		void getContainerEnumName(void);
+		void getContainerEnumName(void);
+		void getContainerOffset(void);
+		void getContainerSize(void);
+		void getContainerSize(void);
+		void getContainerStringName(void);
+		void getContainerStringName(void);
+		void getItem(int);
+		void getItem(int);
+		void getItemCount(int);
+		void getItemCount(int);
+		void getItems(void);
+		void getItems(void);
+		void isValid(void);
+		void isValid(void);
+		void networkUpdateItem(int,ItemInstance const*);
+		void networkUpdateItem(int,ItemInstance const*);
+		void function<void ();
+		void function<void ();
+		void function<void ();
+		void function<void ();
+		void setItem(int,ItemInstance const*);
+		void setItem(int,ItemInstance const*);
+		void ~ContainerModel();
+		void ~ContainerModel();
+		void ~ContainerModel();
+		void ~ContainerModel();
+};
