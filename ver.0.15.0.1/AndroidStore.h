@@ -1,0 +1,44 @@
+#pragma once
+class AndroidStore{
+	public:
+		AndroidStore(_jobject *,NativeStoreListener);
+		AndroidStore(_jobject *,NativeStoreListener);
+		void acknowledgePurchase(PurchaseInfo const&,ProductType);
+		void acknowledgePurchase(PurchaseInfo const&,ProductType);
+		void allowsQueryPurchasesOnStartup(void);
+		void allowsQueryPurchasesOnStartup(void);
+		void allowsSubscriptions(void);
+		void allowsSubscriptions(void);
+		void createAmazonAppStore(StoreListener &);
+		void createGooglePlayStore(std::string const&,StoreListener &);
+		void createGooglePlayStore(std::string const&,StoreListener &);
+		void createSamsungAppStore(StoreListener &);
+		void getAppReceipt(void);
+		void getAppReceipt(void);
+		void getStoreId(void);
+		void getStoreId(void);
+		void handleLicenseChange(void);
+		void handleLicenseChange(void);
+		void isGameLicensed(void);
+		void isGameLicensed(void);
+		void isTrial(void);
+		void isTrial(void);
+		void purchase(ProductId const&,ProductType,std::string const&);
+		void purchase(ProductId const&,ProductType,std::string const&);
+		void purchaseGame(void);
+		void purchaseGame(void);
+		void queryProducts(std::vector<ProductId,std::allocator<ProductId>> const&);
+		void queryProducts(std::vector<ProductId,std::allocator<ProductId>> const&);
+		void queryPurchases(void);
+		void queryPurchases(void);
+		void function<void ();
+		void function<void ();
+		void requiresRestorePurchasesButton(void);
+		void requiresRestorePurchasesButton(void);
+		void restorePurchases(void);
+		void restorePurchases(void);
+		void ~AndroidStore();
+		void ~AndroidStore();
+		void ~AndroidStore();
+		void ~AndroidStore();
+};

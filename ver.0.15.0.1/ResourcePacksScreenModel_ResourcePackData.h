@@ -1,0 +1,49 @@
+#pragma once
+namespace ResourcePacksScreenModel{
+	class ResourcePackData{
+		public:
+		void ResourcePackData(std::shared_ptr<ResourcePack>);
+		void ResourcePackData(std::shared_ptr<ResourcePack>);
+		void ResourcePackData(void);
+		ResourcePacksScreenModel(MinecraftClient &);
+		ResourcePacksScreenModel(MinecraftClient &);
+		void copyFromGlobal(void);
+		void deselectPack(void);
+		void deselectPack(void);
+		void getCanMove(int);
+		void getCanMove(int);
+		void getCanSort(int,int);
+		void getCanSort(int,int);
+		void getDescriptionForPack(int,bool);
+		void getDescriptionForPack(int,bool);
+		void getFileSystemForPack(int,bool);
+		void getFileSystemForPack(int,bool);
+		void getIconPathForPack(int,bool);
+		void getIconPathForPack(int,bool);
+		void getIsPremiumLocked(int);
+		void getIsPremiumLocked(int);
+		void getIsSelected(int);
+		void getIsSelected(int);
+		void getNameForPack(int,bool);
+		void getNameForPack(int,bool);
+		void getNumAvailablePacks(void);
+		void getNumAvailablePacks(void);
+		void getNumSelectedPacks(void);
+		void getNumSelectedPacks(void);
+		void getZipFolderForPack(int,bool);
+		void getZipFolderForPack(int,bool);
+		void loadPacks(bool);
+		void movePack(int,bool);
+		void movePack(int,bool);
+		void savePacks(bool);
+		void savePacks(bool);
+		void selectPack(int);
+		void selectPack(int);
+		void sortPack(int,int);
+		void sortPack(int,int);
+		void ~ResourcePacksScreenModel();
+		void ~ResourcePacksScreenModel();
+		void ~ResourcePacksScreenModel();
+		void ~ResourcePacksScreenModel();
+	}
+};

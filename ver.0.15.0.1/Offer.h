@@ -1,0 +1,47 @@
+#pragma once
+class Offer{
+	public:
+		Offer(TransactionHandler &,Options *,OfferCategory,ProductType,std::string const&,int);
+		Offer(TransactionHandler &,Options *,OfferCategory,ProductType,std::string const&,int);
+		void addPurchase(PurchaseInfo const&,bool);
+		void addPurchase(PurchaseInfo const&,bool);
+		void clearPurchases(void);
+		void clearPurchases(void);
+		void fulfillPurchase(std::shared_ptr<Purchase>);
+		void fulfillPurchase(std::shared_ptr<Purchase>);
+		void getCategory(void);
+		void getCategory(void);
+		void getLocName(void);
+		void getLocName(void);
+		void getNextUnfulfilledPurchase(void);
+		void getNextUnfulfilledPurchase(void);
+		void getNumUnfulfilledPurchases(void);
+		void getNumUnfulfilledPurchases(void);
+		void getOfferIndex(void);
+		void getOfferIndex(void);
+		void getPrice(void);
+		void getPrice(void);
+		void getProductId(void);
+		void getProductId(void);
+		void getProductType(void);
+		void getProductType(void);
+		void getSerializableName(void);
+		void getSerializableName(void);
+		void hasProductInfo(void);
+		void hasProductInfo(void);
+		void hasTransactionHistory(void);
+		void hasTransactionHistory(void);
+		void isAvailableForPurchase(void);
+		void isAvailableForPurchase(void);
+		void isOwned(void);
+		void isOwned(void);
+		void operator==(Offer const&);
+		void setProductInfo(Product const&);
+		void setProductInfo(Product const&);
+		void transactFulfillment(std::shared_ptr<Purchase>,std::unique_ptr<TransactionContext,std::default_delete<TransactionContext>>);
+		void transactFulfillment(std::shared_ptr<Purchase>,std::unique_ptr<TransactionContext,std::default_delete<TransactionContext>>);
+		void transactPurchase(TransactionContext &);
+		void transactPurchase(TransactionContext &);
+		void ~Offer();
+		void ~Offer();
+};

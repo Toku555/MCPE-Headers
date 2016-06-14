@@ -1,0 +1,64 @@
+#pragma once
+namespace FMOD{
+	class ChannelControl{
+		public:
+		void isPlaying(bool *);
+		void isPlaying(bool *);
+		void set3DAttributes(FMOD_VECTOR const*,FMOD_VECTOR const*,FMOD_VECTOR const*);
+		void set3DAttributes(FMOD_VECTOR const*,FMOD_VECTOR const*,FMOD_VECTOR const*);
+		void setMute(bool);
+		void setMute(bool);
+		void setMute(bool);
+		void setPaused(bool);
+		void setPaused(bool);
+		void setPaused(bool);
+		void setPitch(float);
+		void setPitch(float);
+		void setVolume(float);
+		void setVolume(float);
+		void setVolume(float);
+		void stop(void);
+		void stop(void);
+		void addGroup(FMOD::ChannelGroup*,bool,FMOD::DSPConnection **);
+		void addGroup(FMOD::ChannelGroup*,bool,FMOD::DSPConnection **);
+		void getNumSubSounds(int *);
+		void getNumSubSounds(int *);
+		void getSubSound(int,FMOD::Sound**);
+		void getSubSound(int,FMOD::Sound**);
+		void release(void);
+		void release(void);
+		void set3DMinMaxDistance(float,float);
+		void set3DMinMaxDistance(float,float);
+		void close(void);
+		void close(void);
+		void createChannelGroup(char const*,FMOD::ChannelGroup **);
+		void createChannelGroup(char const*,FMOD::ChannelGroup **);
+		void createSound(char const*,uint,FMOD_CREATESOUNDEXINFO *,FMOD::Sound **);
+		void createSound(char const*,uint,FMOD_CREATESOUNDEXINFO *,FMOD::Sound **);
+		void createStream(char const*,uint,FMOD_CREATESOUNDEXINFO *,FMOD::Sound **);
+		void createStream(char const*,uint,FMOD_CREATESOUNDEXINFO *,FMOD::Sound **);
+		void getMasterChannelGroup(FMOD::ChannelGroup **);
+		void getMasterChannelGroup(FMOD::ChannelGroup **);
+		void getVersion(uint *);
+		void getVersion(uint *);
+		void init(int,uint,void *);
+		void init(int,uint,void *);
+		void mixerResume(void);
+		void mixerResume(void);
+		void mixerSuspend(void);
+		void mixerSuspend(void);
+		void playSound(FMOD::Sound *,FMOD::ChannelGroup *,bool,FMOD::Channel **);
+		void playSound(FMOD::Sound *,FMOD::ChannelGroup *,bool,FMOD::Channel **);
+		void release(void);
+		void release(void);
+		void set3DListenerAttributes(int,FMOD_VECTOR const*,FMOD_VECTOR const*,FMOD_VECTOR const*,FMOD_VECTOR const*);
+		void set3DListenerAttributes(int,FMOD_VECTOR const*,FMOD_VECTOR const*,FMOD_VECTOR const*,FMOD_VECTOR const*);
+		void set3DSettings(float,float,float);
+		void set3DSettings(float,float,float);
+		void setOutput(FMOD_OUTPUTTYPE);
+		void setOutput(FMOD_OUTPUTTYPE);
+		void update(void);
+		void update(void);
+		void update(void);
+	}
+};

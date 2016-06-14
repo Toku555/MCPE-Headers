@@ -1,0 +1,47 @@
+#pragma once
+class HudScreenController{
+	public:
+		HudScreenController(std::shared_ptr<MinecraftScreenModel>);
+		HudScreenController(std::shared_ptr<MinecraftScreenModel>);
+		void _broadcastContainerChanges(void);
+		void _canRebind(void);
+		void _canReceiveInput(void);
+		void _checkValidSlot(int);
+		void _cubeSmoothStep(float,float,float);
+		void _getCollectionIndex(UIPropertyBag *);
+		void _getCurrentSlot(void);
+		void _getTotalSlots(void);
+		void _handleNewGuiChatMessages(void);
+		void _handleNewGuiChatMessages(void);
+		void _handleNewPopupItemText(void);
+		void _handleNewPopupItemText(void);
+		void _handleNewTipText(void);
+		void _handleNewTipText(void);
+		void _handleSlotSelection(int);
+		void _isGuiHidden(void);
+		void _isStillValid(void);
+		void _isStillValid(void);
+		void _refreshHotbar(void);
+		void _registerEventHandlers(void);
+		void _registerEventHandlers(void);
+		void _resetHeldButton(void);
+		void _selectSlot(int);
+		void _setHeldButton(int);
+		void _updateInputDelayTimer(void);
+		void addStaticScreenVars(Json::Value &);
+		void addStaticScreenVars(Json::Value &);
+		void bind(std::string const&,uint,int,std::string const&,uint,std::string const&,UIPropertyBag &);
+		void bind(std::string const&,uint,int,std::string const&,uint,std::string const&,UIPropertyBag &);
+		void bind(std::string const&,uint,std::string const&,UIPropertyBag &);
+		void bind(std::string const&,uint,std::string const&,UIPropertyBag &);
+		void handleGameEventNotification(ui::GameEventNotification);
+		void handleGameEventNotification(ui::GameEventNotification);
+		void onOpen(void);
+		void onOpen(void);
+		void tick(void);
+		void tick(void);
+		void ~HudScreenController();
+		void ~HudScreenController();
+		void ~HudScreenController();
+		void ~HudScreenController();
+};
