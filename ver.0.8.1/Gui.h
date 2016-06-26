@@ -1,0 +1,44 @@
+#pragma once
+class Gui{
+	public:
+		Gui(Minecraft *);
+		void addMessage(std::string const&,std::string const&,int);
+		void cubeSmoothStep(float,float,float);
+		void displayClientMessage(std::string const&);
+		void flashSlot(int);
+		void floorAlignToScreenPixel(float);
+		void getNumSlots(void);
+		void getRectangleArea(int);
+		void getSlotIdAt(int,int);
+		void getSlotPos(int,int &,int &);
+		void handleClick(int,int,int);
+		void handleKeyPressed(int);
+		void inventoryUpdated(void);
+		void isInside(int,int);
+		void itemCountItoa(char *,int);
+		void onAppSuspended(void);
+		void onConfigChanged(Config const&);
+		void onLevelGenerated(void);
+		void postError(int);
+		void render(float,bool,int,int);
+		void renderBubbles(void);
+		void renderChatMessages(int,int,uint,bool,Font *);
+		void renderDebugInfo(void);
+		void renderHearts(void);
+		void renderOnSelectItemNameText(int,Font *,int);
+		void renderProgressIndicator(bool,int,int,float);
+		void renderSleepAnimation(int,int);
+		void renderSlot(int,int,int,float);
+		void renderSlotText(ItemInstance const*,float,float,bool,bool);
+		void renderToolBar(float,float);
+		void renderVignette(float,int,int);
+		void resetItemNameOverlay(void);
+		void setNowPlaying(std::string const&);
+		void setScissorRect(IntRectangle const&);
+		void showTipMessage(std::string const&);
+		void texturesLoaded(Textures *);
+		void tick(void);
+		void tickItemDrop(void);
+		void ~Gui();
+		void ~Gui();
+};

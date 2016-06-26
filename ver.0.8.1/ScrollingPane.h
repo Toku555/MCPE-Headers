@@ -1,0 +1,47 @@
+#pragma once
+class ScrollingPane{
+	public:
+		ScrollingPane(int,IntRectangle const&,IntRectangle const&,int,int,float,IntRectangle const&);
+		void _onSelect(int);
+		void addDeltaPos(float,float,float,int);
+		void adjustContentSize(void);
+		void beginTracking(float,float,int);
+		void contentOffset(void);
+		void didEndDecelerating(void);
+		void didEndDragging(void);
+		void getContentOffset(void);
+		void getGridItemFor_slow(int,ScrollingPane::GridItem &);
+		void getItemForPos(float,float,bool);
+		void getVerticleScrollBar(void);
+		void handleUserInput(void);
+		void hideScrollIndicators(void);
+		void onHoldItem(void);
+		void onSelect(int,bool);
+		void queryHoldTime(int *,int *);
+		void refreshItems(void);
+		void refreshPane(void);
+		void render(int,int,float);
+		void renderBatch(std::vector<ScrollingPane::GridItem,std::allocator<ScrollingPane::GridItem>> &,float,float,float);
+		void renderItem(ScrollingPane::GridItem &,float);
+		void setContentOffset(Vec3);
+		void setContentOffset(float,float);
+		void setContentOffsetWithAnimation(Vec3,bool);
+		void setSelected(int,bool);
+		void snapContentOffsetToBounds(bool);
+		void startDecelerationAnimation(bool);
+		void stepThroughDecelerationAnimation(bool);
+		void stopDecelerationAnimation(void);
+		void tick(void);
+		void touchesBegan(float,float,int);
+		void touchesCancelled(float,float,int);
+		void touchesEnded(float,float,int);
+		void touchesMoved(float,float,int);
+		void translate(float,float);
+		void updateHorizontalScrollIndicator(void);
+		void updateScrollFade(ScrollBar &);
+		void updateVerticalScrollIndicator(void);
+		void willBeginDecelerating(void);
+		void willBeginDragging(void);
+		void ~ScrollingPane();
+		void ~ScrollingPane();
+};

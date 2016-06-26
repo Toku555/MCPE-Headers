@@ -1,0 +1,45 @@
+#pragma once
+class TileRenderer{
+	public:
+		TileRenderer(LevelSource *);
+		void _randomizeFaceDirection(Tile *,int,float,float,float);
+		void canRender(int);
+		void getWaterHeight(int,int,int,Material const*);
+		void renderEast(Tile *,float,float,float,TextureUVCoordinateSet const&);
+		void renderFaceDown(Tile *,float,float,float,TextureUVCoordinateSet const&);
+		void renderFaceUp(Tile *,float,float,float,TextureUVCoordinateSet const&);
+		void renderGuiTile(Tile *,int,float,float);
+		void renderNorth(Tile *,float,float,float,TextureUVCoordinateSet const&);
+		void renderSouth(Tile *,float,float,float,TextureUVCoordinateSet);
+		void renderTile(Tile *,int,bool);
+		void renderWest(Tile *,float,float,float,TextureUVCoordinateSet const&);
+		void tesselateBedInWorld(Tile *,int,int,int);
+		void tesselateBlockInWorld(Tile *,int,int,int);
+		void tesselateBlockInWorld(Tile *,int,int,int,float,float,float);
+		void tesselateBlockInWorldWithAmbienceOcclusion(Tile *,int,int,int,float,float,float);
+		void tesselateCactusInWorld(Tile *,int,int,int);
+		void tesselateCactusInWorld(Tile *,int,int,int,float,float,float);
+		void tesselateCrossInWorld(Tile *,int,int,int);
+		void tesselateCrossTexture(Tile *,int,float,float,float);
+		void tesselateDoorInWorld(Tile *,int,int,int);
+		void tesselateFenceGateInWorld(FenceGateTile *,int,int,int);
+		void tesselateFenceInWorld(FenceTile *,int,int,int);
+		void tesselateFireInWorld(Tile *,int,int,int);
+		void tesselateInWorld(Tile *,int,int,int);
+		void tesselateInWorld(Tile *,int,int,int,TextureUVCoordinateSet const&);
+		void tesselateInWorldNoCulling(Tile *,int,int,int);
+		void tesselateLadderInWorld(Tile *,int,int,int);
+		void tesselateRailInWorld(BaseRailTile *,int,int,int);
+		void tesselateRowInWorld(Tile *,int,int,int);
+		void tesselateRowTexture(Tile *,int,float,float,float);
+		void tesselateStairsInWorld(StairTile *,int,int,int);
+		void tesselateStemDirTexture(Tile *,int,int,float,float,float,float);
+		void tesselateStemInWorld(Tile *,int,int,int);
+		void tesselateStemTexture(Tile *,int,float,float,float,float);
+		void tesselateThinFenceInWorld(ThinFenceTile *,int,int,int);
+		void tesselateTorch(Tile *,float,float,float,float,float);
+		void tesselateTorchInWorld(Tile *,int,int,int);
+		void tesselateTreeInWorld(Tile *,int,int,int);
+		void tesselateWallInWorld(WallTile *,int,int,int);
+		void tesselateWaterInWorld(Tile *,int,int,int);
+};
