@@ -1,80 +1,50 @@
+//本来はScreenを継承しています
 #pragma once
+
+#include "Button.h"
+#include "TextBox.h"
+#include "Label.h"
+#include "FlatLevelSource.h"
+#include "ImageButton.h"
+#include "ToggleComponent.h"
+#include "MinecraftClient.h"
+
+#include <string>
+#include <vector>
+
 class CreateWorldScreen{
-	public:
-		CreateWorldScreen(MinecraftClient &,CreateWorldScreenType);
-		CreateWorldScreen(MinecraftClient &,CreateWorldScreenType);
-		CreateWorldScreen(MinecraftClient &,LevelSummary const&);
-		CreateWorldScreen(MinecraftClient &,LevelSummary const&);
-		void _buttonClicked(Button &);
-		void _buttonClicked(Button &);
-		void _controllerDirectionChanged(int,StickDirection);
-		void _controllerDirectionChanged(int,StickDirection);
-		void _createToggle(bool);
-		void _createToggle(bool);
-		void _createWorldClicked(void);
-		void _createWorldClicked(void);
-		void _editGameMode(GameType);
-		void _editGameMode(GameType);
-		void _exportWorldClicked(void);
-		void _exportWorldClicked(void);
-		void _getDefaultGenerator(void);
-		void _getDescription(void);
-		void _getDescription(void);
-		void _getGameMode(void);
-		void _getGameMode(void);
-		void _getWorldData(void);
-		void _guiElementClicked(GuiElement &);
-		void _guiElementClicked(GuiElement &);
-		void _isAdvanced(void);
-		void _isFlat(void);
-		void _isOneOf(Button &,std::vector<std::shared_ptr<ImageButton>,std::allocator<std::shared_ptr<ImageButton>>> &,int &);
-		void _isOneOfGuiElements(GuiElement &,std::vector<std::shared_ptr<ImageButton>,std::allocator<std::shared_ptr<ImageButton>>> &,int &);
-		void _isOneOfGuiElements(GuiElement &,std::vector<std::shared_ptr<TextBox>,std::allocator<std::shared_ptr<TextBox>>> &,int &);
-		void _levelStorage(void);
-		void _pointerPressed(int,int);
-		void _pointerPressed(int,int);
-		void _pointerReleased(int,int);
-		void _pointerReleased(int,int);
-		void _renameLevel(void);
-		void _renameLevel(void);
-		void _setWorldData(LevelData const&);
-		void closeScreen(void);
-		void closeScreen(void);
-		void generateLocalGame(void);
-		void generateLocalGame(void);
-		void getLevelName(void);
-		void getScreenName(void);
-		void getScreenName(void);
-		void getSeed(void);
-		void handleBackEvent(bool);
-		void handleBackEvent(bool);
-		void handleButtonRelease(short);
-		void handleButtonRelease(short);
-		void handleCaretLocation(int);
-		void handleCaretLocation(int);
-		void handleTextChar(std::string const&,bool);
-		void handleTextChar(std::string const&,bool);
-		void init(void);
-		void init(void);
-		void isAlwaysDay(void);
-		void isAlwaysDay(void);
-		void isEditMode(void);
-		void isWorldLimited(void);
-		void isWorldLimited(void);
-		void onLevelNameChanged(std::string const&);
-		void onLevelNameChanged(std::string const&);
-		void onSetKeyboardHeight(float);
-		void onSetKeyboardHeight(float);
-		void render(int,int,float);
-		void render(int,int,float);
-		void setTextboxText(std::string const&);
-		void setTextboxText(std::string const&);
-		void setupPositions(void);
-		void setupPositions(void);
-		void tick(void);
-		void tick(void);
-		void ~CreateWorldScreen();
-		void ~CreateWorldScreen();
-		void ~CreateWorldScreen();
-		void ~CreateWorldScreen();
+public:
+	char filler1[0x14];
+	MinecraftClient& minecraftClient;//20
+	char filler2[0x88];
+	int gameType;//160
+	int generatorType;//164
+	std::vector<std::shared_ptr<ImageButton>,std::allocator<std::shared_ptr<ImageButton>>> gameTypeButtons;//168
+	std::vector<std::shared_ptr<ImageButton>,std::allocator<std::shared_ptr<ImageButton>>> generatorButtons;//180
+	Button& selectedGameTypeButton;//192
+	char filler3[20];
+	Button& closeButton;//216
+	char filler4[44];
+	Button& toggleButton;//264
+	char filler5[4];//268
+	TextBox& nameBox;//272
+	char filler6[4];//276
+	TextBox& seedBox;//280
+	char filler7[4];//284
+	Label& nameLabel;//288
+	Label& seedLabel;//292
+public:
+	void _createWorldClicked(void);
+	void _buttonClicked(Button &);
+	void _createToggle(bool);
+	void _editGameMode(GameType);
+	LevelData& _getWorldData(void)const;
+	void _setWorldData(LevelData const&);
+	bool _isFlat(void);
+	bool _isAdvanced(void);
+	bool _isOneOf(Button &,std::vector<std::shared_ptr<ImageButton>,std::allocator<std::shared_ptr<ImageButton>>> &,int &)const;
+	void _renameLevel(void);
+	void closeScreen(void);
+	void init(void);
+	bool isEditMode(void)const;
 };
