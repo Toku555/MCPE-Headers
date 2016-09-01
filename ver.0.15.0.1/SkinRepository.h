@@ -1,6 +1,8 @@
 #pragma once
 class SkinRepository{
 	public:
+		char filler1[0x34];
+	public:
 		SkinRepository(OfferRepository &,Options &,SkinGeometryGroup &,mce::TextureGroup &,ResourceLocation const&,ulong long);
 		SkinRepository(OfferRepository &,Options &,SkinGeometryGroup &,mce::TextureGroup &,ResourceLocation const&,ulong long);
 		void _doNameSwap(void);
